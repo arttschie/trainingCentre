@@ -68,7 +68,8 @@ class Laptop extends PersonalComputer {
     }
 }
 
-class OfficeLaptop extends Laptop {
+class
+OfficeLaptop extends Laptop {
     private static final String operationalSystem = "MACOS";
     private final boolean hasMSOffice;
 

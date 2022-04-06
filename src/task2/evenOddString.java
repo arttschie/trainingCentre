@@ -1,4 +1,5 @@
 /* Четные и нечетные символы разделить по разным строкам */
+/* Количество цифр в строке */
 
 package task2;
 
@@ -8,17 +9,23 @@ public class evenOddString {
                 "index shed 0.4%. The focus of investors on Wednesday will be on the release of minutes from the " +
                 "Fed's last policy meeting, out at 1800 GMT. The yield on benchmark 10-year Treasury notes " +
                 "rose to 2.63%, hitting three-year highs after Brainard's remarks.";
-        String evenStr = "";
-        String oddStr = "";
+        StringBuffer evenStr = new StringBuffer();
+        StringBuffer oddStr = new StringBuffer();
+        int count = 0;
 
         for (int i = 0; i < str1.length(); i ++) {
             if (i % 2 == 0)
-                evenStr = evenStr + str1.charAt(i);
+                evenStr = evenStr.append(str1.charAt(i));
             else
-                oddStr = oddStr + str1.charAt(i);
+                oddStr = oddStr.append(str1.charAt(i));
         }
 
-        System.out.println(evenStr);
-        System.out.println(oddStr);
+        for (int i = 0; i < str1.length(); i ++) {
+            if (Character.isDigit(str1.charAt(i)))
+                count += 1;
+        }
+
+        System.out.println(evenStr + "\n" + oddStr);
+        System.out.println("Количество цифр в строке = " + count);
     }
 }
