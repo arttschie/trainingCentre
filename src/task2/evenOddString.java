@@ -2,7 +2,7 @@
 
 package task2;
 
-public class StringTask {
+public class evenOddString {
     public static void main(String[] args) {
         String str1 = "The STOXX stock index of 600 European companies fell 0.8%, while the MSCI All-Country stock " +
                 "index shed 0.4%. The focus of investors on Wednesday will be on the release of minutes from the " +
