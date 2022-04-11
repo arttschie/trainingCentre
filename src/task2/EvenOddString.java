@@ -10,7 +10,6 @@ public class EvenOddString {
                 "rose to 2.63%, hitting three-year highs after Brainard's remarks.";
         StringBuffer evenStr = new StringBuffer();
         StringBuffer oddStr = new StringBuffer();
-        int count = 0;
 
         for (int i = 0; i < str1.length(); i ++) {
             if (i % 2 == 0)
@@ -19,13 +18,6 @@ public class EvenOddString {
                 oddStr = oddStr.append(str1.charAt(i));
         }
 
-        for (int i = 0; i < str1.length(); i ++) {
-            if (Character.isDigit(str1.charAt(i))) {
-                count += 1;
-            }
-        }
-
         System.out.println(evenStr + "\n" + oddStr);
-        System.out.println("Количество цифр в строке = " + count);
     }
 }

@@ -10,8 +10,9 @@ public class ReverseEachWord {
                 "index shed 0.4%. The focus of investors on Wednesday will be on the release of minutes from the " +
                 "Fed's last policy meeting, out at 1800 GMT. The yield on benchmark 10-year Treasury notes " +
                 "rose to 2.63%, hitting three-year highs after Brainard's remarks.";
-        StringBuilder resultedString = new StringBuilder("");
+
         StringBuilder temp;
+        StringBuilder resultedString = new StringBuilder("");
 
         Scanner scanner = new Scanner(str);
 

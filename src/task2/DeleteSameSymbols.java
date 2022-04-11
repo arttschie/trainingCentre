@@ -17,6 +17,7 @@ public class DeleteSameSymbols {
                 }
             }
         }
+
         System.out.println(str);
     }
 }

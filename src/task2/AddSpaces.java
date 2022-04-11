@@ -14,7 +14,7 @@ public class AddSpaces {
 
         StringBuilder resultedStr = new StringBuilder("");
 
-        List linkedString = new LinkedList();
+        List<Character> linkedString = new LinkedList<>();
 
         for (char ch : str.toCharArray()) {
             linkedString.add(ch);
@@ -24,7 +24,7 @@ public class AddSpaces {
         char[] resultedCharArray = new char[linkedString.size()];
 
         for (int i = 0; i < linkedString.size(); i++) {
-            resultedCharArray[i] = (char) linkedString.get(i);
+            resultedCharArray[i] = linkedString.get(i);
             resultedStr.append(resultedCharArray[i]);
         }
 
