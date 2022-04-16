@@ -18,6 +18,7 @@ public class IOTask {
                     new FileWriter("src\\task3\\ResultedFile.txt")) {
 
             while ((s = br.readLine()) != null) {
+
                 Scanner scanner = new Scanner(s);
 
                 String[] splitedString = scanner.nextLine().split("\\s");
@@ -33,10 +34,12 @@ public class IOTask {
                     }
                 }
                 for (String string : splitedString) {
-                    sb = new StringBuilder(string);
+                    sb = new StringBuilder(string);1
                     sb.reverse();
                     fw.write(String.valueOf(sb) + " ");
                 }
+
+                scanner.close();
             }
         } catch (IOException exc) {
             System.out.println("Ошибка ввода-вывода: " + exc);
