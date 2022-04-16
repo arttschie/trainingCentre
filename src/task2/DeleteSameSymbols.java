@@ -13,7 +13,6 @@ public class DeleteSameSymbols {
             for (int j = str.length() - 1; j >= 0; j--) {
                 if ((str.charAt(i) == str.charAt(j)) & (i != j)) {
                     str.deleteCharAt(j);
-                    continue;
                 }
             }
         }
