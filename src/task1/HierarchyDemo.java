@@ -105,12 +105,15 @@ class OfficeLaptop extends Laptop {
 
 public class HierarchyDemo {
     public static void main(String[] args) {
-        PersonalComputer pc1 = new PersonalComputer();
-        PersonalComputer pc2 = new PersonalComputer("1", 8192, 2, 1128);
-        Laptop laptop1 = new Laptop(pc2, true, 13.0);
+
+        PersonalComputer pc1 = new PersonalComputer("1", 8192, 2, 1128);
+
+        Laptop laptop1 = new Laptop(pc1, true, 13.0);
+
         OfficeLaptop officeLaptop = new OfficeLaptop(laptop1, true);
 
         System.out.println(officeLaptop);
+
     }
 }
 
