@@ -34,7 +34,7 @@ public class IOTask {
                     }
                 }
                 for (String string : splitedString) {
-                    sb = new StringBuilder(string);1
+                    sb = new StringBuilder(string);
                     sb.reverse();
                     fw.write(String.valueOf(sb) + " ");
                 }

@@ -1,10 +1,10 @@
 package task1;
 
 class PersonalComputer {
-    private final String id;
-    private final int memory;
-    private final int ramModuleQuantity;
-    private final double internalMemory;
+    private String id;
+    private int memory;
+    private int ramModuleQuantity;
+    private double internalMemory;
 
     PersonalComputer() {
         this.id = "not assigned";
@@ -38,7 +38,7 @@ class PersonalComputer {
 }
 
 class Laptop extends PersonalComputer {
-    private final boolean hasSSD;
+    private boolean hasSSD;
     private double displaySize;
 
     public boolean isHasSSD() {
@@ -68,10 +68,9 @@ class Laptop extends PersonalComputer {
     }
 }
 
-class
-OfficeLaptop extends Laptop {
+class OfficeLaptop extends Laptop {
     private static final String operationalSystem = "MACOS";
-    private final boolean hasMSOffice;
+    private boolean hasMSOffice;
 
     public OfficeLaptop() {
         super();
